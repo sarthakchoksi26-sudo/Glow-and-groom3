@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="Glow & Groom Salon & Spa — hair, skin, nails and beauty services in a welcoming space.">
+  <title>Glow & Groom | Salon & Spa</title>
+  <style>
+    :root{--bg:#11100f;--panel:#1b1918;--panel2:#24201d;--gold:#f6cc58;--gold2:#ffe8a0;--text:#fbf7f0;--muted:#bcb4aa;--line:rgba(255,255,255,.12);--max:1160px;--serif:Georgia,"Times New Roman",serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin-inline:auto}.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.035em}.eyebrow{color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.section{padding:88px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}.section-head h2{font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.06;margin:9px 0 0}.section-head p{max-width:430px;color:var(--muted);margin:0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 21px;border:1px solid transparent;border-radius:999px;font-weight:750;cursor:pointer;transition:transform .2s,background .2s,border-color .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#17130b}.btn-gold:hover{background:var(--gold2)}.btn-outline{background:rgba(255,255,255,.03);border-color:var(--line)}.btn-outline:hover{border-color:var(--gold)}.nav-wrap{position:sticky;top:0;z-index:10;background:rgba(17,16,15,.91);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background:linear-gradient(135deg,#ffebaa,#eab83c);color:#17130b;font:1.7rem var(--serif)}.brand-name{display:block;font:1.25rem/1.15 var(--serif)}.brand-sub{display:block;margin-top:4px;font-size:.61rem;letter-spacing:.23em;color:var(--gold)}.nav-links{display:flex;align-items:center;gap:23px}.nav-links>a:not(.btn){font-size:.9rem;color:#e0d9d1}.nav-links>a:not(.btn):hover{color:var(--gold)}.menu-toggle{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:white;font-size:1.25rem}
+.hero{position:relative;isolation:isolate;display:flex;align-items:center;min-height:650px;overflow:hidden;border-bottom:1px solid var(--line)}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1900&q=85") center/cover}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(12,11,11,.96),rgba(12,11,11,.77) 48%,rgba(12,11,11,.2)),linear-gradient(0deg,rgba(12,11,11,.48),transparent 55%)}.hero-content{max-width:740px;padding:78px 0 56px}.hero h1{font-size:clamp(3.6rem,8vw,7rem);line-height:.98;margin:18px 0 23px}.hero h1 span{color:var(--gold);font-style:italic}.hero-copy{max-width:570px;color:#e1dcd7;font-size:1.1rem}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-stats{display:flex;flex-wrap:wrap;gap:40px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line)}.stat strong{display:block;font:2rem var(--serif);color:var(--gold2)}.stat span{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.trust{border-bottom:1px solid var(--line)}.trust-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:23px 0}.trust-item{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center;color:#e6ded4}.trust-item b{color:var(--gold);font-size:1.15rem}
+.services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-card{overflow:hidden;background:var(--panel);border:1px solid var(--line);border-radius:21px;transition:transform .25s,border-color .25s}.service-card:hover{transform:translateY(-5px);border-color:rgba(246,204,88,.6)}.service-photo{height:210px;background:var(--panel2);overflow:hidden}.service-photo img{transition:transform .4s}.service-card:hover .service-photo img{transform:scale(1.05)}.service-body{padding:21px}.service-body h3{font:1.65rem var(--serif);margin:0 0 7px}.service-body p{font-size:.92rem;color:var(--muted);margin:0 0 17px}.service-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px}.price{font-size:.86rem;font-weight:750;color:var(--gold2)}.text-link{color:var(--gold);font-weight:750;font-size:.9rem}
+.about{background:#161414;border-block:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(32px,7vw,85px)}.about-visual{position:relative;min-height:460px}.about-visual>img{position:absolute;inset:0 38px 34px 0;width:calc(100% - 38px);height:calc(100% - 34px);border-radius:150px 150px 18px 18px}.about-badge{position:absolute;right:0;bottom:0;width:145px;height:145px;display:grid;place-content:center;text-align:center;border:8px solid #161414;border-radius:50%;background:var(--gold);color:#17130b}.about-badge strong{font:2.2rem var(--serif)}.about-badge span{font-size:.65rem;text-transform:uppercase;letter-spacing:.1em}.about-copy h2{font-size:clamp(2.5rem,5vw,4.3rem);line-height:1.03;margin:12px 0 18px}.about-copy p{color:var(--muted)}.benefits{list-style:none;padding:0;margin:23px 0 28px;display:grid;gap:10px}.benefits li:before{content:"✦";color:var(--gold);margin-right:10px}
+.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:200px 200px;gap:13px}.gallery-item{position:relative;overflow:hidden;border-radius:16px;background:var(--panel)}.gallery-item:first-child{grid-row:span 2}.gallery-item img{transition:transform .4s}.gallery-item:hover img{transform:scale(1.05)}.gallery-label{position:absolute;bottom:11px;left:11px;padding:6px 11px;border-radius:999px;background:#11100fd9;border:1px solid var(--line);font-size:.78rem}.reviews{background:#161414;border-block:1px solid var(--line)}.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.review-card{padding:23px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.stars{color:var(--gold);letter-spacing:.15em}.review-card blockquote{margin:14px 0 18px;color:#e4ded8}.review-card strong{display:block}.review-card small,.note{color:var(--muted)}.note{font-size:.8rem;margin-top:15px}.cta-section{padding:72px 0}.cta-panel{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:clamp(28px,5vw,52px);border-radius:26px;background:var(--gold);color:#17130b}.cta-panel h2{font:clamp(2.2rem,5vw,3.6rem)/1.04 var(--serif);margin:0 0 10px}.cta-panel p{margin:0;color:#51411e}.cta-panel .btn{background:#17130b;color:#fff;white-space:nowrap}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px}.contact-info h2{font:clamp(2.5rem,5vw,4rem)/1.05 var(--serif);margin:10px 0 15px}.contact-info p{color:var(--muted)}.contact-line{display:flex;gap:13px;margin-top:19px}.contact-symbol{color:var(--gold);font-size:1.2rem}.contact-line strong{display:block}.contact-line span:last-child{display:block;color:var(--muted);font-size:.91rem;overflow-wrap:anywhere}.booking-form{padding:26px;border:1px solid var(--line);border-radius:21px;background:var(--panel)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.85rem;color:#e8e0d7}.field input,.field select,.field textarea{width:100%;min-height:47px;padding:11px 12px;background:#100f0f;color:var(--text);border:1px solid var(--line);border-radius:10px;outline:none}.field textarea{min-height:88px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.booking-form .btn{width:100%;margin-top:16px}.form-hint{font-size:.77rem;color:var(--muted);margin:10px 0 0}footer{padding:28px 0;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;color:var(--muted);font-size:.82rem}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.footer-links a:hover{color:var(--gold)}.toast{position:fixed;bottom:18px;left:50%;z-index:30;max-width:calc(100% - 30px);padding:12px 17px;border-radius:12px;background:var(--gold);color:#17130b;font-weight:700;box-shadow:0 8px 30px #0008;transform:translate(-50%,150px);transition:transform .3s}.toast.show{transform:translate(-50%,0)}
+@media(max-width:900px){.nav-links{gap:13px}.nav-links>a:not(.btn){font-size:.82rem}.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.review-grid{grid-template-columns:1fr 1fr}.review-card:last-child{grid-column:1/-1}}
+@media(max-width:700px){.container{width:calc(100% - 34px)}.section{padding:65px 0}.section-head{display:block}.section-head p{margin-top:13px}.nav{min-height:68px}.menu-toggle{display:grid;place-items:center}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:15px 20px 22px;background:#151313;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:4px}.nav-links.open{display:flex}.nav-links>a:not(.btn){padding:10px 7px;font-size:.96rem}.nav-links .btn{margin-top:8px}.hero{min-height:auto}.hero:before{background-position:58% center}.hero:after{background:linear-gradient(90deg,rgba(12,11,11,.95),rgba(12,11,11,.68)),linear-gradient(0deg,rgba(12,11,11,.45),transparent)}.hero-content{padding:75px 0 40px}.hero h1{font-size:clamp(3.15rem,15vw,5rem)}.hero-stats{gap:22px 28px;margin-top:38px}.stat strong{font-size:1.7rem}.trust-inner{grid-template-columns:1fr;gap:12px}.trust-item{justify-content:flex-start;text-align:left}.services-grid{grid-template-columns:1fr}.service-photo{height:230px}.about-grid{grid-template-columns:1fr}.about-visual{min-height:370px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 150px 150px}.gallery-item:first-child{grid-row:auto;grid-column:1/-1}.review-grid{grid-template-columns:1fr}.review-card:last-child{grid-column:auto}.cta-panel{display:block}.cta-panel .btn{margin-top:21px;white-space:normal}.contact-grid{grid-template-columns:1fr;gap:27px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <!-- Before publishing: replace the WhatsApp number, address, hours, email, social links and sample reviews with real details. -->
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Glow & Groom home"><span class="brand-mark">G</span><span><span class="brand-name">Glow &amp; Groom</span><span class="brand-sub">SALON · SPA</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">Our Story</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+        <a class="btn btn-gold" href="#contact">Book Appointment ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+      <div class="eyebrow">Your personal beauty ritual</div>
+      <h1 class="serif">Feel good.<br>Look <span>glowing.</span></h1>
+      <p class="hero-copy">Thoughtful hair, skin and beauty care in a calm, welcoming space. Come as you are — leave feeling like your best self.</p>
+      <div class="hero-actions"><a class="btn btn-gold" href="#contact">Book an appointment ↗</a><a class="btn btn-outline" href="#services">Explore services ↓</a></div>
+      <div class="hero-stats"><div class="stat"><strong>Care</strong><span>Made personal</span></div><div class="stat"><strong>Craft</strong><span>Detail focused</span></div><div class="stat"><strong>Glow</strong><span>Feel your best</span></div></div>
+    </div></div></section>
+
+    <div class="trust"><div class="container trust-inner"><div class="trust-item"><b>✦</b> Personalised consultations</div><div class="trust-item"><b>✦</b> A calm, welcoming space</div><div class="trust-item"><b>✦</b> Beauty care with attention to detail</div></div></div>
+
+    <section class="section" id="services"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">The menu</div><h2 class="serif">A little care.<br>A lot of confidence.</h2></div><p>Choose a moment for yourself. Update the service descriptions and pricing to match your salon's actual menu.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Hair stylist working with a client"></div><div class="service-body"><h3>Hair Studio</h3><p>Fresh cuts, styling and hair-care rituals tailored to your look.</p><div class="service-bottom"><span class="price">Ask for pricing</span><a class="text-link book-service" href="#contact" data-service="Hair Studio">Book ↗</a></div></div></article>
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80" alt="Relaxing facial skincare treatment"></div><div class="service-body"><h3>Skin Rituals</h3><p>Relaxing skincare experiences selected for your needs.</p><div class="service-bottom"><span class="price">Ask for pricing</span><a class="text-link book-service" href="#contact" data-service="Skin Rituals">Book ↗</a></div></div></article>
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80" alt="Nail manicure and beauty treatment"></div><div class="service-body"><h3>Nails &amp; Hands</h3><p>Neat, polished nail care for everyday style and special moments.</p><div class="service-bottom"><span class="price">Ask for pricing</span><a class="text-link book-service" href="#contact" data-service="Nails & Hands">Book ↗</a></div></div></article>
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Beauty stylist preparing a client"></div><div class="service-body"><h3>Bridal Glam</h3><p>Beauty planning and styling for your once-in-a-lifetime moments.</p><div class="service-bottom"><span class="price">Consultation required</span><a class="text-link book-service" href="#contact" data-service="Bridal Glam">Enquire ↗</a></div></div></article>
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80" alt="Beauty products arranged for self-care"></div><div class="service-body"><h3>Hair Spa</h3><p>A restorative pause with a care routine designed around your hair.</p><div class="service-bottom"><span class="price">Ask for pricing</span><a class="text-link book-service" href="#contact" data-service="Hair Spa">Book ↗</a></div></div></article>
+        <article class="service-card"><div class="service-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80" alt="Professional beauty makeup look"></div><div class="service-body"><h3>Makeup</h3><p>Soft, polished looks for celebrations, events and photos.</p><div class="service-bottom"><span class="price">Ask for pricing</span><a class="text-link book-service" href="#contact" data-service="Makeup">Book ↗</a></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section about" id="about"><div class="container about-grid">
+      <div class="about-visual"><img loading="lazy" src="https://images.unsplash.com/photo-1521590832167-7bcbda7b6c8b?auto=format&fit=crop&w=1100&q=85" alt="Modern salon interior"><div class="about-badge"><strong>♡</strong><span>Care in every detail</span></div></div>
+      <div class="about-copy"><div class="eyebrow">Welcome to your space</div><h2 class="serif">Beauty should feel <em>like you.</em></h2><p>At Glow &amp; Groom, the goal is simple: make time for yourself feel special. Great beauty care starts with listening, thoughtful recommendations and attention to the little details.</p><ul class="benefits"><li>A friendly consultation before your service</li><li>Recommendations based on your preferences</li><li>A comfortable experience from start to finish</li></ul><a class="btn btn-outline" href="#contact">Let's plan your visit ↗</a></div>
+    </div></section>
+
+    <section class="section" id="gallery"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">A glimpse inside</div><h2 class="serif">The Glow gallery</h2></div><p>Replace these sample photos with your own salon, team and client-work images for an authentic portfolio.</p></div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=80" alt="Modern salon interior"><span class="gallery-label">Our space</span></div>
+        <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80" alt="Hair styling"><span class="gallery-label">Hair styling</span></div>
+        <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" alt="Skincare treatment"><span class="gallery-label">Skin care</span></div>
+        <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" alt="Nail care"><span class="gallery-label">Nail care</span></div>
+        <div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Beauty preparation"><span class="gallery-label">Beauty details</span></div>
+      </div>
+    </div></section>
+
+    <section class="section reviews" id="reviews"><div class="container">
+      <div class="section-head"><div><div class="eyebrow">Kind words matter</div><h2 class="serif">The experience<br>speaks for itself.</h2></div><p>Replace these clearly marked sample cards with genuine customer feedback shared with permission.</p></div>
+      <div class="review-grid">
+        <article class="review-card"><div class="stars" aria-label="Decorative five-star placeholder">★★★★★</div><blockquote>“Add a real customer review here about their experience and what they loved.”</blockquote><strong>Customer name</strong><small>Service received</small></article>
+        <article class="review-card"><div class="stars" aria-label="Decorative five-star placeholder">★★★★★</div><blockquote>“Replace this text with authentic feedback shared by a customer.”</blockquote><strong>Customer name</strong><small>Service received</small></article>
+        <article class="review-card"><div class="stars" aria-label="Decorative five-star placeholder">★★★★★</div><blockquote>“Highlight something customers appreciate, like the consultation or atmosphere.”</blockquote><strong>Customer name</strong><small>Service received</small></article>
+      </div><p class="note">These are placeholders, not real testimonials. Update them before publishing.</p>
+    </div></section>
+
+    <section class="cta-section"><div class="container"><div class="cta-panel"><div><h2>Ready for a little<br>you-time?</h2><p>Tell us what you have in mind. We'll help you plan your visit.</p></div><a class="btn" href="#contact">Let's book your visit ↗</a></div></div></section>
+
+    <section class="section" id="contact"><div class="container contact-grid">
+      <div class="contact-info"><div class="eyebrow">Come say hello</div><h2 class="serif">Your next glow-up starts here.</h2><p>Send an appointment request and we'll help you choose the right service and time.</p>
+        <div class="contact-line"><span class="contact-symbol">⌖</span><div><strong>Visit us</strong><span>Replace with your verified salon address</span></div></div>
+        <div class="contact-line"><span class="contact-symbol">◷</span><div><strong>Opening hours</strong><span>Add your actual days and timings</span></div></div>
+        <div class="contact-line"><span class="contact-symbol">✉</span><div><strong>Email</strong><span>hello@glowandgroom.example</span></div></div>
+        <p style="font-size:.8rem">Demo details are shown intentionally. Update them before publishing.</p>
+      </div>
+      <form class="booking-form" id="bookingForm"><div class="eyebrow">Appointment request</div><h3 class="serif" style="font-size:2rem;margin:8px 0 22px">Let's make it happen.</h3>
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+          <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" required placeholder="+91..."></div>
+          <div class="field"><label for="service">Choose a service *</label><select id="service" name="service" required><option value="">Select service</option><option>Hair Studio</option><option>Skin Rituals</option><option>Nails & Hands</option><option>Bridal Glam</option><option>Hair Spa</option><option>Makeup</option><option>Other</option></select></div>
+          <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+          <div class="field full"><label for="message">Anything else? (optional)</label><textarea id="message" name="message" placeholder="Preferred time or any details..."></textarea></div>
+        </div>
+        <button class="btn btn-gold" type="submit">Continue on WhatsApp ↗</button><p class="form-hint">This demo opens WhatsApp with a prepared message. It does not store bookings or confirm availability.</p>
+      </form>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-inner">
+    <a class="brand" href="#home"><span class="brand-mark">G</span><span><span class="brand-name">Glow &amp; Groom</span><span class="brand-sub">SALON · SPA</span></span></a>
+    <div>© <span id="year"></span> Glow &amp; Groom. All rights reserved.</div><div class="footer-links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+  </div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // IMPORTANT: Replace with the salon's real WhatsApp number, country code included, digits only.
+    const WHATSAPP_NUMBER = "919876543210"; // Demo number — change before publishing.
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const toast = document.getElementById("toast");
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+      menuToggle.textContent = open ? "×" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    document.querySelectorAll(".book-service").forEach(link => {
+      link.addEventListener("click", () => {
+        const service = link.dataset.service;
+        document.getElementById("service").value = service;
+      });
+    });
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      window.setTimeout(() => toast.classList.remove("show"), 3500);
+    }
+
+    document.getElementById("bookingForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const name = String(data.get("name") || "").trim();
+      const phone = String(data.get("phone") || "").trim();
+      const service = String(data.get("service") || "").trim();
+      const date = String(data.get("date") || "").trim();
+      const message = String(data.get("message") || "").trim();
+
+      if (!name || !phone || !service) {
+        showToast("Please complete the required fields.");
+        return;
+      }
+      if (WHATSAPP_NUMBER === "919876543210") {
+        showToast("Demo mode: update WHATSAPP_NUMBER in the code before using bookings.");
+        return;
+      }
+
+      const lines = [
+        "Hello Glow & Groom! I'd like to request an appointment.",
+        "Name: " + name,
+        "Phone: " + phone,
+        "Service: " + service,
+        date ? "Preferred date: " + date : "",
+        message ? "Additional details: " + message : ""
+      ].filter(Boolean);
+      const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
